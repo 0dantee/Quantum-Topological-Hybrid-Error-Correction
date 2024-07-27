@@ -7,19 +7,29 @@ This repository contains a hybrid algorithm that integrates quantum simulations 
 ### 1. Lie Algebra for Quantum Operations
 
 We use the Lie algebra associated with the special unitary group $\text{SU}(2)$, defined by the Pauli matrices:
+- $\sigma_x$:
+  $$
+  \sigma_x = \begin{pmatrix}
+  0 & 1 \\
+  1 & 0
+  \end{pmatrix}
+  $$
 
-- $\sigma_x = \begin{pmatrix}
-0 & 1 \\
-1 & 0
-\end{pmatrix}$
-- $\sigma_y = \begin{pmatrix}
-0 & -i \\
-i & 0
-\end{pmatrix}$
-- $\sigma_z = \begin{pmatrix}
-1 & 0 \\
-0 & -1
-\end{pmatrix}$
+- $\sigma_y$:
+  $$
+  \sigma_y = \begin{pmatrix}
+  0 & -i \\
+  i & 0
+  \end{pmatrix}
+  $$
+
+- $\sigma_z$:
+  $$
+  \sigma_z = \begin{pmatrix}
+  1 & 0 \\
+  0 & -1
+  \end{pmatrix}
+  $$
 
 The commutator of two matrices $A$ and $B$ is given by:
 
