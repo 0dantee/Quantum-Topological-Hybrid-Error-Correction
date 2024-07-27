@@ -2,9 +2,9 @@
 
 This repository contains a hybrid algorithm that integrates quantum simulations with classical machine learning for error correction in topological quantum codes. The approach leverages the mathematical structure of Lie algebras and topological anyons, combined with dynamic error correction strategies and machine learning techniques.
 
-# Mathematical Framework
+## Mathematical Framework
 
-## 1. Lie Algebra for Quantum Operations
+### 1. Lie Algebra for Quantum Operations
 
 We use the Lie algebra associated with the special unitary group $\text{SU}(2)$, defined by the Pauli matrices:
 
@@ -27,7 +27,7 @@ $$
 [A, B] = AB - BA
 $$
 
-## 2. Monoid Structure
+### 2. Monoid Structure
 
 We define a monoid structure with an identity matrix $I$ and a matrix multiplication operation:
 
@@ -41,7 +41,7 @@ $$
 \text{Braiding}(M_1, M_2, \ldots, M_n) = M_n \cdots M_2 M_1
 $$
 
-## 3. Topological Anyons
+### 3. Topological Anyons
 
 Topological anyons are described by their fusion and braiding rules. For anyons $A$ and $B$, fusion is governed by:
 
@@ -57,7 +57,7 @@ $$
 
 where $B'$ is the braided anyon.
 
-## 4. Dynamic Error Correction
+### 4. Dynamic Error Correction
 
 The dynamic error correction mechanism involves adjusting the correction matrix based on the fidelity $F$:
 
@@ -76,7 +76,7 @@ I & \text{if } F \geq 0.99
 \end{cases}
 $$
 
-## 5. Machine Learning for Error Detection
+### 5. Machine Learning for Error Detection
 
 An `MLPClassifier` is trained on features extracted from noisy and ideal quantum states. The features are:
 
